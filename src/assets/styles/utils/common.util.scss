@@ -1,0 +1,11 @@
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+$base-color: #eb414a;
+
+@font-face {
+  font-family: 'yofont';
+  src: url('/static/fonts/iconfont.woff') format('woff'), url('/static/fonts/iconfont.ttf') format('truetype');
+}

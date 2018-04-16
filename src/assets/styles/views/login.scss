@@ -1,0 +1,165 @@
+.loginPage,.personPage,.resgiter{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.loginHead{
+	position: relative;
+    z-index: 4999;
+    zoom: 1;
+    height: 43px;
+    color: #000;
+    background-color: #ffb422;
+    @include flexbox();
+    @include justify-content();
+	@include align-items();
+	.head-l{
+		position: absolute;
+		left: 0;
+	    top: 0;
+	    padding-top: 0.4rem;
+	    padding-left: 0.4rem;
+	    a{
+	    	position: absolute;
+		    width: 70px;
+		    height: 24px;
+		    line-height: 10rem;
+		    overflow: hidden;
+		    display: block;
+		    background: url(../images/mini-icon.png) no-repeat -3px -1885px;
+    		background-size: 50px auto;
+	    }
+	}
+	h1{
+		font-size: .48rem;
+	}
+}
+
+// -------input
+.usr-box{
+	width: 100%;
+	// height: 100%;
+	// height: 3rem;
+	background: #fff;
+	@include flexbox();
+	flex-direction: column;
+	padding: 0 15px;
+	.icon{
+		width: 100%;
+		height: 1.4rem;
+		margin:0 auto;
+		outline: none;
+	    border: 1px solid #ddd;	
+	    font-size:1.15rem;
+	    color: #999;
+	    padding-left: 27px;
+	    background:#f5f5f5 url(../images/per-icon.png) no-repeat 6px center;
+	    background-size: auto 50%;
+	    margin-top:20px;
+	    &:nth-of-type(2){
+	    	position: relative;
+			background:#f5f5f5 url(../images/key-icon.png) no-repeat 6px center;
+			background-size: auto 50%;	
+		}	
+	}
+	.showBtn{
+		position: absolute;
+	    right: 1.25rem;
+	    top: 2.4rem;
+	    color: #999;
+	}
+	h2{
+		text-align: center;
+	    height: 1.4rem;
+	    line-height: 1.4rem;
+	    border-radius: 5px;
+	    background-color: #eb414b;
+	    color: #fff;
+	    font-size: 16px;
+	    margin: 15px 0;
+	}
+	.user-box1{
+		a{
+		    width: 30%;
+		    margin-left: 1.4rem;
+		    font-size: 1.16rem;
+		    color: #666;
+		}
+	}
+	// -------使用合作账号登录
+	.lg-ft-box{
+		margin-top: 1.7rem;
+		dt{
+			width: 100%;
+			height: 1.7rem;
+			line-height: 1.7rem;
+			text-align: center;
+			color: #999;
+		}
+		dd{
+			text-align: center;
+			a{
+				display: inline-block;
+				width: 1.48rem;
+				height: 1.48rem;
+				margin: 0 1.1rem;
+				background: url(../images/baidu-icon.png) no-repeat;
+				background-size: 100% 100%;
+				&:nth-of-type(2){
+					background: url(../images/weibo-icon.png) no-repeat;
+					background-size: 100% 100%;	
+				}
+				&:nth-of-type(3){
+					background: url(../images/renren-icon.png) no-repeat;
+					background-size:  100% 100%;
+				}
+				&:nth-of-type(4){
+					background: url(../images/qq-icon.png) no-repeat;
+					background-size: 100% 100%;
+				}
+			}
+		}
+	}
+}
+
+
+
+// 个人信息界面
+.personPage{
+	.personNews{
+		height: 2.27rem;
+		background: url(../images/user-header-bg.png) no-repeat;
+		background-size: 100% 100%;
+		line-height: 2.27rem;
+		padding: 0 .3rem;
+		.user-container{
+			width: 2rem;
+			height: 1.4rem;
+			padding-top: 1.4rem;
+			img{
+				width: 1.43rem;
+				height: 1.45rem;
+				float: left;
+			}
+			.user-name{
+				height: 1.4rem;
+				line-height: 1.4rem;
+				padding-left: 3px;
+				color: #fff;
+				font-weight: bold;
+				text-align: center;
+				font-size: 20px;
+			}
+		}
+	}
+		.exitBtn{
+			text-align: center;
+		    height: 1.4rem;
+		    line-height: 1.4rem;
+		    border-radius: 5px;
+		    background-color: #ffb422;
+		    color: #fff;
+		    font-size: 16px;
+		    margin: 15px 0;
+		}
+}
